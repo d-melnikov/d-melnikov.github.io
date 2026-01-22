@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Melnikov - Frontend Developer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background: white;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+            font-size: 11pt;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24pt;
+            padding-bottom: 12pt;
+            border-bottom: 2pt solid #4285F4;
+        }
+
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #4285F4;
+            margin-bottom: 6pt;
+        }
+
+        .title {
+            font-size: 14pt;
+            color: #666666;
+            margin-bottom: 12pt;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #4285F4;
+            margin-top: 18pt;
+            margin-bottom: 12pt;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid #E0E0E0;
+        }
+
+        .summary {
+            background-color: #F8F9FA;
+            padding: 12pt;
+            margin-bottom: 18pt;
+            border-left: 3pt solid #4285F4;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+
+        .two-columns {
+            display: table;
+            width: 100%;
+            margin-bottom: 18pt;
+        }
+
+        .left-column, .right-column {
+            display: table-cell;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .left-column {
+            padding-right: 12pt;
+        }
+
+        .right-column {
+            padding-left: 12pt;
+        }
+
+        .skills-category {
+            margin-bottom: 12pt;
+        }
+
+        .skills-category h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 6pt;
+        }
+
+        .skills-list {
+            font-size: 10pt;
+            color: #555555;
+            line-height: 1.4;
+        }
+
+        .experience-item {
+            margin-bottom: 15pt;
+            padding-left: 12pt;
+            border-left: 2pt solid #34A853;
+        }
+
+        .job-header {
+            margin-bottom: 6pt;
+        }
+
+        .job-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .company {
+            font-size: 10pt;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .period {
+            font-size: 9pt;
+            color: #999999;
+        }
+
+        .job-description {
+            font-size: 10pt;
+            color: #555555;
+            line-height: 1.4;
+            margin-top: 6pt;
+        }
+
+        .education-item {
+            margin-bottom: 6pt;
+            font-size: 10pt;
+        }
+
+        .course-title {
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .project {
+            margin-bottom: 24pt;
+            page-break-inside: avoid;
+            border: 1pt solid #E0E0E0;
+            padding: 12pt;
+            background-color: #FAFAFA;
+        }
+
+        .project-header {
+            margin-bottom: 12pt;
+            padding-bottom: 6pt;
+            border-bottom: 1pt solid #E0E0E0;
+        }
+
+        .project-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #4285F4;
+            margin-bottom: 3pt;
+        }
+
+        .project-subtitle {
+            font-size: 10pt;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .project-content {
+            display: table;
+            width: 100%;
+        }
+
+        .project-info {
+            display: table-cell;
+            width: 65%;
+            vertical-align: top;
+            padding-right: 12pt;
+        }
+
+        .project-screenshot {
+            display: table-cell;
+            width: 35%;
+            vertical-align: top;
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            height: 120pt;
+            border: 2pt dashed #CCCCCC;
+            background-color: #F8F9FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 9pt;
+            color: #999999;
+            flex-direction: column;
+        }
+
+        .screenshot-icon {
+            font-size: 24pt;
+            margin-bottom: 6pt;
+        }
+
+        .project-description {
+            font-size: 10pt;
+            color: #555555;
+            line-height: 1.4;
+            margin-bottom: 9pt;
+        }
+
+        .tech-stack {
+            margin-bottom: 9pt;
+        }
+
+        .tech-label {
+            font-size: 9pt;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .tech-list {
+            font-size: 9pt;
+            color: #666666;
+            line-height: 1.3;
+        }
+
+        .project-links {
+            font-size: 9pt;
+        }
+
+        .project-links a {
+            color: #4285F4;
+            text-decoration: none;
+            margin-right: 12pt;
+        }
+
+        /* Стили для печати и экспорта */
+        @media print {
+            body {
+                font-size: 10pt;
+            }
+            
+            .project {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Альтернативный макет для узких экранов */
+        @media screen and (max-width: 600px) {
+            .two-columns, .project-content {
+                display: block;
+            }
+            
+            .left-column, .right-column, .project-info, .project-screenshot {
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 12pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Заголовок -->
+    <div class="header">
+        <div class="name">Denis Melnikov</div>
+        <div class="title">Frontend Developer | React | TypeScript</div>
+        <div class="contact-info">
+            📍 Odessa, Ukraine | ✉️ mlnkv79@gmail.com | 📞 +380952218050<br>
+            🔗 GitHub: github.com/066den
+        </div>
+    </div>
+
+    <!-- Краткое описание -->
+    <div class="summary">
+        <strong>Professional Summary:</strong> 7+ years of experience in web development, including 5 years of professional work with React and modern front-end technologies. Strong skills in building scalable, maintainable interfaces with clean code and efficient state management.
+    </div>
+
+    <!-- Двухколоночная секция -->
+    <div class="two-columns">
+        <!-- Левая колонка -->
+        <div class="left-column">
+            <div class="section-title">Technical Skills</div>
+            
+            <div class="skills-category">
+                <h3>Core Technologies:</h3>
+                <div class="skills-list">JavaScript, TypeScript, HTML5, CSS3, SCSS, Sass</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Frameworks & Libraries:</h3>
+                <div class="skills-list">ReactJS, Next.js, Redux, Redux Toolkit, Zustand, React Router, Prisma, Hook Form, Bootstrap, Material UI</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools & Environments:</h3>
+                <div class="skills-list">Git, npm, Webpack, Gulp, Node.js, PHP, WebRTC</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>CMS Platforms:</h3>
+                <div class="skills-list">WordPress, OpenCart, OctoberCMS, Modx</div>
+            </div>
+
+            <div class="section-title">Education & Courses</div>
+            
+            <div class="education-item">
+                <span class="course-title">Udemy:</span> React с нуля для начинающих
+            </div>
+            <div class="education-item">
+                <span class="course-title">Udemy:</span> Полный курс по JavaScript + React
+            </div>
+            <div class="education-item">
+                <span class="course-title">Udemy:</span> React + Redux - Профессиональная Разработка
+            </div>
+            <div class="education-item">
+                <span class="course-title">Udemy:</span> React Native 2020. Мобильные приложения на JavaScript
+            </div>
+            <div class="education-item">
+                <span class="course-title">Udemy:</span> NestJS - с нуля, современный backend на TypeScript и Node JS
+            </div>
+
+            <div class="section-title">Languages</div>
+            <div style="font-size: 10pt; color: #555555;">
+                <strong>English:</strong> Pre-Intermediate<br>
+                Able to read technical documentation, understand tasks in sprints, and communicate via text.
+            </div>
+        </div>
+
+        <!-- Правая колонка -->
+        <div class="right-column">
+            <div class="section-title">Professional Experience</div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company">"Ello" (Ello Messenger)</div>
+                    <div class="period">Apr 2023 - Jul 2025 (2 years 3 months)</div>
+                </div>
+                <div class="job-description">
+                    Developed and maintained messenger application using React and modern frontend technologies.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company">"Merehead Company" (Fintech and Blockchain)</div>
+                    <div class="period">Jun 2022 - Mar 2023 (9 months)</div>
+                </div>
+                <div class="job-description">
+                    Worked on fintech and blockchain projects with complex UI/UX requirements.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company">"WebApps Web Development Company"</div>
+                    <div class="period">Nov 2018 - Jan 2022 (3 years 3 months)</div>
+                </div>
+                <div class="job-description">
+                    Built responsive web applications and integrated with various APIs and CMS platforms.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="company">"Laboratory Direct"</div>
+                    <div class="period">Oct 2017 - Jan 2022 (4 years 4 months)</div>
+                </div>
+                <div class="job-description">
+                    Developed Single Page Applications (SPA) using React and Redux.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Freelance Frontend Developer</div>
+                    <div class="company">Various Projects</div>
+                    <div class="period">2015 - Present</div>
+                </div>
+                <div class="job-description">
+                    • Built adaptive and cross-browser layouts based on Figma designs<br>
+                    • Integrated REST APIs and configured Webpack builds<br>
+                    • Created custom themes and components for WordPress and other CMS platforms
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Портфолио проектов -->
+    <div class="section-title">Portfolio Projects</div>
+
+    <!-- Team Dashboard -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">Team Dashboard</div>
+            <div class="project-subtitle">Modern team management application with React 19 & Next.js 15</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    A comprehensive team management dashboard built with the latest React 19 and Next.js 15. Features modern UI components, state management, and responsive design for efficient team collaboration and project tracking.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">React 19, Next.js 15, Zustand, TypeScript, shadcn/ui, Tailwind CSS</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://team-dashboard-theta.vercel.app/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/team-dashboard">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">📊</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add team dashboard image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDO System -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">EDO - Electronic Document Exchange</div>
+            <div class="project-subtitle">Full-stack document management system for businesses</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Service for companies and entrepreneurs to exchange documents electronically. Features secure document handling, user authentication, comprehensive dashboard, and integration with various document formats.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, Redux, Bootstrap, TypeScript, Node.js, Nest.js, PostgreSQL</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/066den/edo-react-nest">📱 GitHub Repository</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">📄</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add EDO system image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- React Chess -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">React Chess Game</div>
+            <div class="project-subtitle">Interactive chess game with advanced game logic</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Interactive chess game built with React and TypeScript. Features complete game logic implementation, move validation, piece movement animations, and clean object-oriented architecture.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, TypeScript, Redux, Object Oriented Programming</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://066den.github.io/react-chess/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/react-chess">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">♟️</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add chess game image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- React Movies -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">React Movies - E-commerce Platform</div>
+            <div class="project-subtitle">Movie database with shopping cart functionality</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Movie database and e-commerce platform with search, filtering, shopping cart functionality, and responsive design using Materialize components.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, Redux, Materialize</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://066den.github.io/react-movies/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/react-movies">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">🎬</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add movie app image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weather App -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">Weather Application</div>
+            <div class="project-subtitle">Real-time weather app with geolocation support</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Real-time weather application with geolocation support, detailed forecasts, beautiful Material UI design, and Redux Toolkit for efficient state management.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, TypeScript, Redux-Toolkit, Material UI</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://066den.github.io/weather/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/weather">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">🌤️</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add weather app image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pokemon World -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">Pokemon World</div>
+            <div class="project-subtitle">Interactive Pokemon encyclopedia and battle system</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Interactive Pokemon encyclopedia with detailed information, advanced search functionality, and battle system demonstrating object-oriented programming principles.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, TypeScript, Redux, Object Oriented Programming</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://066den.github.io/pokemon/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/pokemon">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">🎮</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add Pokemon app image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- React Forms -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">React Forms with Hook Form</div>
+            <div class="project-subtitle">Advanced form handling demonstration</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Advanced form handling demonstration using React Hook Form and Redux Toolkit. Features comprehensive validation, dynamic forms, and optimal performance patterns.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">HTML5, SCSS, ReactJS, TypeScript, Redux, Redux ToolKit, HookForm</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://066den.github.io/react-reduxtoolkit-hook-form/">🚀 Live Demo</a>
+                    <a href="https://github.com/066den/react-reduxtoolkit-hook-form">📱 GitHub</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">📝</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add forms demo image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ello Messenger -->
+    <div class="project">
+        <div class="project-header">
+            <div class="project-title">Ello Messenger</div>
+            <div class="project-subtitle">Professional messenger application (Commercial Project)</div>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <div class="project-description">
+                    Commercial messenger application developed during employment at Ello. Features real-time messaging, file sharing, group chats, and modern responsive design.
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-label">Technologies:</div>
+                    <div class="tech-list">React, TypeScript, WebRTC, Real-time communication, Modern UI/UX</div>
+                </div>
+                <div class="project-links">
+                    <a href="https://stage-web.ellomessenger.com/">🚀 Live Application</a>
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="screenshot-icon">💬</div>
+                    <div>Screenshot Placeholder</div>
+                    <div style="font-size: 8pt;">Add Ello messenger image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
