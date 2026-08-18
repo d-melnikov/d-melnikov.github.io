@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CV</title>
+		<title>Denis Melnikov — Senior Frontend Developer CV</title>
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -132,10 +132,10 @@
 
 			/* 1. Modern (Default) */
 			.theme-modern .cv-content {
-				font-family: 'Inter', sans-serif;
-				font-size: 14px;
-				color: #333;
-				line-height: 1.6;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11pt;
+				color: #1f2937;
+				line-height: 1.45;
 			}
 			.theme-modern h1,
 			.theme-modern h2,
@@ -144,32 +144,45 @@
 				margin-bottom: 0.5em;
 			}
 			.theme-modern h1 {
-				border-bottom: 2px solid #007bff;
-				padding-bottom: 0.3em;
-				margin-bottom: 0.8em;
-				font-size: 1.5rem;
+				border-bottom: 2px solid #2563eb;
+				padding-bottom: 0.2em;
+				margin-bottom: 0.35em;
+				font-size: 22pt;
+				line-height: 1.15;
 			}
 			.theme-modern h2 {
-				color: #555;
-				margin-top: 1.5em;
-				border-bottom: 1px solid #eee;
-				font-size: 1.2rem;
+				color: #374151;
+				margin-top: 1.15em;
+				margin-bottom: 0.45em;
+				border-bottom: 1px solid #d1d5db;
+				font-size: 13pt;
+				line-height: 1.25;
 			}
 			.theme-modern h3 {
-				color: #555;
-				margin-top: 1.5em;
-				font-size: 1rem;
+				color: #111827;
+				margin-top: 0.9em;
+				margin-bottom: 0.2em;
+				font-size: 11.5pt;
+				line-height: 1.25;
+			}
+			.theme-modern p {
+				margin-bottom: 0.55em;
 			}
 			.theme-modern ul {
-				padding-left: 1.5em;
+				padding-left: 1.25em;
+				margin: 0.25em 0 0.65em;
+			}
+			.theme-modern li {
+				margin-bottom: 0.2em;
 			}
 			.theme-modern a {
-				color: #007bff;
+				color: #1d4ed8;
 				text-decoration: none;
 			}
 			.theme-modern hr {
-				border: 1px solid #eee;
-				margin: 1em 0;
+				border: 0;
+				border-top: 1px solid #e5e7eb;
+				margin: 0.8em 0;
 			}
 
 			/* 2. Classic */
@@ -271,6 +284,11 @@
 			}
 
 			/* Print Styles */
+			@page {
+				size: A4;
+				margin: 14mm 16mm;
+			}
+
 			@media print {
 				body {
 					height: auto;
@@ -288,7 +306,7 @@
 				}
 				.preview-pane {
 					width: 100%;
-					padding: 40px 50px;
+					padding: 0;
 					overflow: visible;
 					background: white !important;
 				}
@@ -296,7 +314,28 @@
 					max-width: none;
 					width: 100%;
 					margin: 0;
+					font-size: 10.5pt;
+					line-height: 1.4;
 					color: black !important; /* Force black text for some themes unless user assumes color print */
+				}
+				.cv-content h1,
+				.cv-content h2,
+				.cv-content h3 {
+					break-after: avoid;
+					page-break-after: avoid;
+				}
+				.cv-content p,
+				.cv-content ul {
+					orphans: 3;
+					widows: 3;
+				}
+				.cv-content li {
+					break-inside: avoid;
+					page-break-inside: avoid;
+				}
+				.cv-content a {
+					color: inherit !important;
+					text-decoration: none;
 				}
 				.page-break {
 					break-after: page;
@@ -406,4 +445,3 @@
 		</script>
 	</body>
 </html>
-

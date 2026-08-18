@@ -1,185 +1,104 @@
-const defaultMarkdown = `# Denis Melnikov — Frontend Developer (React / TypeScript)
+const defaultMarkdown = `# Denis Melnikov
 
-**Location:** Odessa, Ukraine  
-**Email:** mlnkv79@gmail.com  
-**Phone:** +380952218050  
-**GitHub:** github.com/d-melnikov  
-**LinkedIn:** linkedin.com/in/denys-melnykov-639196b6  
+## Senior Frontend Developer | React, Next.js, TypeScript
+
+Odesa, Ukraine | [+380 95 221 80 50](tel:+380952218050) | [mlnkv79@gmail.com](mailto:mlnkv79@gmail.com) | [LinkedIn](https://linkedin.com/in/denys-melnykov-639196b6) | [GitHub](https://github.com/d-melnikov) | [Portfolio](https://d-melnikov.github.io)
 
 ---
 
 ## Professional Summary
 
-Frontend Developer with **7+ years in web development** and **5+ years with React**. Builds scalable,  
-maintainable UI with clean architecture and efficient state management. Experienced with **React/Next.js  
-ecosystem,** modern toolchains, API integrations, and **AI-powered features** (OpenAI / Anthropic /  
-Gemini), including prompt design and API orchestration.
+Senior Frontend Developer with **8+ years of professional web development experience**, specializing in **React, Next.js, and TypeScript**. Builds production web applications from responsive user interfaces through API integration, server-state management, authentication, and real-time features. Combines frontend architecture expertise with hands-on experience in Node.js, Prisma, PostgreSQL, and AI API integrations.
 
 ---
 
-## Key Skills
+## Technical Skills
 
-- JavaScript, TypeScript, HTML5, CSS3, SCSS/Sass
-
-### Frontend Frameworks & Libraries
-- React.js, Next.js  
-- Redux, Redux Toolkit, Redux-Saga  
-- Zustand, React Router  
-- React Hook Form  
-
-### UI
-- Material UI, Bootstrap, shadcn/ui, Tailwind CSS  
-
-### Animation
-- Framer Motion  
-
-### Backend / Data
-- Node.js, NestJS  
-- Prisma, PostgreSQL  
-
-### AI & Developer Productivity
-- Cursor (AI-assisted development workflow)  
-- Integrations of AI APIs (OpenAI / Anthropic / Gemini)  
-- Prompt design, API orchestration  
-
-### Tooling & Platforms
-- Git, npm, Webpack, Gulp  
-- Docker (Dockerfile, docker-compose)  
-- WebRTC  
-- CMS: WordPress, OpenCart, OctoberCMS, MODX  
+- **Languages:** TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS/Sass
+- **Frontend:** React, Next.js (App Router), React Router, React Hook Form, Framer Motion
+- **State and data:** TanStack Query (React Query), Redux Toolkit, Redux, Redux-Saga, Zustand, Zod
+- **UI:** Tailwind CSS, shadcn/ui, Material UI, Bootstrap, responsive design, cross-browser development, Figma-to-code
+- **Backend and databases:** Node.js, NestJS, Prisma ORM, PostgreSQL, NextAuth.js, REST APIs
+- **Real-time and integrations:** Socket.IO, WebSockets, WebRTC, Cloudflare Images, Mapbox, Telegram, SMS integrations
+- **Delivery and tooling:** Git, npm, Docker, Webpack, production builds, strict TypeScript, code review
+- **AI integrations:** OpenAI, Anthropic, Gemini, prompt design, API orchestration
 
 ---
 
-## Experience
+## Work Experience
 
-### Frontend Developer — Ello (Ello Messenger)
+### Frontend Developer | Ello (Ello Messenger)
 **Apr 2023 – Jul 2025**
 
-- Developed and maintained SPA using React and state management approaches  
-- Built responsive, cross-browser UI based on Figma designs  
-- Integrated REST APIs  
+- Developed and maintained a production React and TypeScript single-page application for web messaging.
+- Translated Figma designs into reusable, responsive, and cross-browser user interfaces.
+- Integrated REST APIs and real-time communication flows for messaging and calling features.
+- Worked with React Router, SCSS, WebSockets, and WebRTC in a product-focused development environment.
 
-**Project:** stage-web.ellomessenger.com  
-*(React, TypeScript, React Router, SCSS)*
-
----
-
-### Frontend Developer — Merehead (Fintech & Blockchain)
+### Frontend Developer | Merehead (Fintech and Blockchain)
 **Jun 2022 – Mar 2023**
 
-- Developed and maintained React-based UI  
-- Worked with API integrations and production-oriented front-end builds  
+- Delivered React interfaces for fintech and blockchain products.
+- Integrated frontend workflows with external and internal APIs.
+- Built reusable components and production-ready responsive interfaces.
 
----
-
-### Frontend Developer — Laboratory Direct
+### Frontend Developer | Laboratory Direct
 **Oct 2017 – Jan 2022**
 
-- Developed and maintained SPA using React + Redux  
-- Implemented adaptive, cross-browser UI from Figma  
-- Integrated REST APIs  
-- Configured / build pipeline with Webpack  
+- Developed and maintained React and Redux single-page applications.
+- Converted Figma designs into adaptive, cross-browser interfaces and reusable components.
+- Integrated REST APIs and implemented client-side data flows.
+- Maintained and improved Webpack build configuration for production delivery.
 
----
-
-### Frontend Developer — WebApps Web Development Company
+### Frontend Developer | WebApps Web Development Company
 **Nov 2018 – Jan 2022**
 
-- Developed React UI and reusable components  
-- Worked on CMS-driven front ends  
-- Custom themes/components for WordPress and other platforms  
+- Built reusable React components and CMS-driven frontend applications for client projects.
+- Developed custom themes and components for WordPress and other content management systems.
+- Delivered responsive UI and integrations within existing platform constraints.
 
----
-
-### Freelance / Frontend Developer
+### Freelance Frontend Developer
 **2015 – 2020**
 
-- Web UI development  
-- Layouts and integrations across client projects  
+- Delivered responsive websites, frontend features, and third-party integrations for client projects.
+- Converted designs into production interfaces and adapted implementations to existing CMS platforms.
 
 ---
 
-## Portfolio (Commercial / Team Projects)
+## Selected Projects
 
-### Team dashboard
-**Demo:** arcast-stage.vercel.app  
-**GitHub:** github.com/d-melnikov/arcast  
+### Maystro | Service Marketplace and Provider CRM
+**Live product:** [maystro.co.ua](https://maystro.co.ua)
 
-**Stack:**  
-React 19, Next.js 15, Zustand, TypeScript, shadcn/ui,  
-Framer Motion, Tailwind CSS  
+- Architected and developed a production marketplace that connects clients with independent professionals and service companies.
+- Delivered service catalogues, provider profiles, staff and resource management, scheduling, bookings, orders, service requests, reviews, and notification workflows.
+- Implemented authentication, authorization, server-state management, PostgreSQL data flows, real-time updates, and integrations with Cloudflare Images, Mapbox, Telegram, and SMS delivery.
 
----
+**Technology:** Next.js, React, TypeScript, TanStack Query, Tailwind CSS, shadcn/ui, Zod, Prisma, PostgreSQL, NextAuth.js, Socket.IO
 
-### EDO (electronic document exchange service)
-**GitHub:** github.com/d-melnikov/edo-react-nest  
+### Arcast | Podcast and Media Production Platform
+**Live product:** [arcast.studio](https://www.arcast.studio/)
 
-**Stack:**  
-HTML5, SCSS, React, Redux, Bootstrap,  
-TypeScript, Node.js, NestJS, PostgreSQL  
+- Built a responsive commercial web experience for podcast and short-form video production services.
+- Implemented reusable content and service interfaces with modern animation and component patterns.
 
-**Description:**  
-service for companies/entrepreneurs to exchange documents electronically
+**Technology:** Next.js 15, React 19, TypeScript, Zustand, Tailwind CSS, shadcn/ui, Framer Motion
 
----
+### EDO | Electronic Document Exchange
+**Source code:** [github.com/d-melnikov/edo-react-nest](https://github.com/d-melnikov/edo-react-nest)
 
-### Team dashboard (alternative build)
-**Demo:** team-dashboard-theta.vercel.app  
-**GitHub:** github.com/d-melnikov/team-dashboard  
+- Developed a full-stack document exchange application for companies and entrepreneurs.
+- Implemented React and Redux frontend flows backed by a NestJS API and PostgreSQL database.
 
-**Stack:**  
-React 19, Next.js 15, Zustand, TypeScript,  
-shadcn/ui, Tailwind CSS  
+**Technology:** React, TypeScript, Redux, Node.js, NestJS, PostgreSQL, SCSS, Bootstrap
 
 ---
 
-### Ello messenger (web)
-stage-web.ellomessenger.com  
+## Professional Development
 
-**Stack:**  
-HTML5, SCSS, React, TypeScript, React Router  
-
----
-
-## Pet Projects
-
-### E-commerce
-d-melnikov.github.io/react-movies — github.com/d-melnikov/react-movies  
-*(React, Redux, SCSS, Materialize)*
-
-### React Forms
-d-melnikov.github.io/react-reduxtoolkit-hook-form — github.com/d-melnikov/react-reduxtoolkit-hook-form  
-*(TypeScript, Redux Toolkit, React Hook Form)*
-
-### Chess
-d-melnikov.github.io/react-chess — github.com/d-melnikov/react-chess  
-*(TypeScript, Redux, OOP)*
-
-### Weather
-d-melnikov.github.io/weather — github.com/d-melnikov/weather  
-*(TypeScript, Redux Toolkit, Material UI)*
-
-### Pokemon world
-d-melnikov.github.io/pokemon — github.com/d-melnikov/pokemon  
-*(TypeScript, Redux, OOP)*
-
-### Add users
-d-melnikov.github.io/merehead — github.com/d-melnikov/merehead  
-*(React, Redux, Redux-Saga, TypeScript, axios, React Router, Material UI)*
-
----
-
-## Education & Courses
-
-- Udemy: React с нуля для начинающих  
-- Udemy: Полный курс по JavaScript + React  
-- Udemy: React + Redux — Профессиональная Разработка  
-- Udemy: React Native 2020  
-- Udemy: NestJS — с нуля, современный backend на TypeScript и Node.js  
-
----
+Continuous professional development through courses in React, Redux, JavaScript, TypeScript, React Native, Node.js, and NestJS.
 
 ## Languages
 
-**English:** Pre-Intermediate — reads technical documentation, understands sprint tasks, communicates in text
+**English:** Pre-Intermediate — technical documentation, sprint tasks, and written communication
 `
